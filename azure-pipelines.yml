@@ -1,3 +1,14 @@
 - task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2
   inputs:
     command: 'build'
+    projects: 'er\k'
+    arguments: 'rty'
+  inputs:
+    command: 'build'
+- task: gulp@0
+  inputs:
+    gulpFile: 'gulpfile.js'
+    targets: 
+    gulpjs: 'node_modules/gulp/bin/gulp.js'
+    enableCodeCoverage: false
